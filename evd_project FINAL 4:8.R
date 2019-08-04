@@ -6,8 +6,6 @@
 #ideas for sensitivity: treshold/lag, vaccine stock and delay time, vaccine strategy efficacy: effort and idenprob, 
   #social threshold function+biasing, starting distributions
 
-#paper questions: subsections, process detail, math and notation 
-
 library(igraph)
 library(matrixStats)
 library(data.table)
