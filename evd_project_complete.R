@@ -53,7 +53,7 @@ create.world=function(h,a){
   world=world+edge(new.edges)
   
   world=simplify(world) #dedupe and unloop
-  isolates=which(colSums(as_adj(world))==0)
+  isolates=which(colSums(as_adj(world, sparse=FALSE))==0)
   world=delete.vertices(world,isolates) #remove singletons
   households=unique(households[which(households %in% V(world))])  #match household list to final population 
   return(list(world,households)) 
