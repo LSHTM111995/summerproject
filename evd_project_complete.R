@@ -624,7 +624,7 @@ simulate=function(size,reps=2,strat="none",game=FALSE){
   return(list(results,inst.trust,vac.trust,beh.trust,epi.curve.history,repro.history.complete, output[[5]],state))
 }
 
-#small helper to convert outputted types to displayed types, useful for checkign results
+#small helper to convert outputted types to displayed types, useful for checking results
 redisplay=function(output){
   display(output[[1]],output[[2]],output[[3]],output[[4]],output[[5]],output[[6]])
 }
